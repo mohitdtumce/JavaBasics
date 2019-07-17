@@ -1,0 +1,2 @@
+mvn clean package
+java -cp target/competitive-coding-1.0-SNAPSHOT.jar io.github.mohitdtumce.MainApplication <input.txt output.txt
