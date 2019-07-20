@@ -1,6 +1,5 @@
 package io.github.mohitdtumce;
 
-import leetcode.*;
 import datastructure.linked_list.*;
 
 import java.lang.*;
@@ -8,11 +7,18 @@ import java.lang.*;
 public class MainApplication {
 
     public static void main(String[] args) throws Exception {
-        LinkedList linkedList = new LinkedList();
-        int [] nums = {1, 2, 4, 3, 1};
-        linkedList.pushFrontList(nums);
-        linkedList.printList();
-        System.out.println(linkedList.isPalindrome2());
+        LinkedListV2 a = new LinkedListV2();
+        a.pushBack(1);
+        a.pushBack(2);
+        a.pushBack(3);
+        a.pushBack(4);
+        a.printList();
+        LinkedListV2 b = new LinkedListV2();
+        b.pushBack(3);
+        b.pushBack(4);
+        b.pushBack(5);
+        b.printList();
+        LinkedListV2 result = LinkedListUtility.intersectionSortedLinkedList(a, b);
+        result.printList();
     }
 }
-
